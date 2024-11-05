@@ -1,0 +1,103 @@
+<ScrollView android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maaş Hesablama"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp" /> <!-- Boşluq əlavə edildi -->
+        <TextView
+            android:id="@+id/textViewPreparedBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prepared by Rizvan"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp" /> <!-- Kiçik boşluq əlavə edildi -->
+
+        <EditText
+            android:id="@+id/editTextIsciAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+           android:layout_marginTop="40dp"
+            android:hint="İşçi adı daxil edin" />
+
+        <EditText
+            android:id="@+id/editTextEmekHaqqi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="numberDecimal"
+            android:hint="Əmək haqqı daxil edin" />
+
+        <EditText
+            android:id="@+id/editTextGelmeyenGunler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="number"
+            android:hint="Gəlməyən günlərin sayı" />
+
+        <EditText
+            android:id="@+id/editTextCekMeblegi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="numberDecimal"
+            android:hint="Çek məbləği" />
+
+        <EditText
+            android:id="@+id/editTextAvansMeblegi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="numberDecimal"
+            android:hint="Avans məbləği" />
+
+        <EditText
+            android:id="@+id/editTextBonusMeblegi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="numberDecimal"
+            android:hint="Bonus məbləği" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="wrap_content"
+          android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hesabla" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:text="Nəticə burada göstəriləcək"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>
